@@ -3,60 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website with Model Viewer</title>
-    <style>
-        /* Add your custom CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        main {
-            padding: 20px;
-        }
-        /* Adjust the size of the model viewer as needed */
-        model-viewer {
-            width: 100%;
-            height: 400px;
-        }
-    </style>
+    <title>Google Model Viewer Example</title>
+    <!-- Include the Model Viewer JavaScript library -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <h2>Main Content Section</h2>
-        <p>This is the main content of your website. You can add text, images, links, and other elements here.</p>
-        <!-- Add your model viewer code here -->
-        <model-viewer src="URL_TO_YOUR_3D_MODEL" alt="A 3D model" auto-rotate camera-controls></model-viewer>
-    </main>
-    <footer>
-        <p>&copy; 2024 Simple Website. All rights reserved.</p>
-    </footer>
+    <h1>Google Model Viewer Example</h1>
 
-    <!-- Include the Model Viewer JavaScript library -->
-    <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
-
-<!-- Import the component -->
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-
-<!-- Use it like any other HTML element -->
-<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="bear.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+    <!-- Add the model viewer element with source and other attributes -->
+    <model-viewer 
+        src="bear.glb"
+        alt="A 3D model"
+        auto-rotate
+        camera-controls
+        style="width: 100%; height: 500px;">
+    </model-viewer>
 </body>
 </html>
