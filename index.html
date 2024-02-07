@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Simple Website with Model Viewer</title>
     <style>
+        /* Add your custom CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -29,6 +29,11 @@
         main {
             padding: 20px;
         }
+        /* Adjust the size of the model viewer as needed */
+        model-viewer {
+            width: 100%;
+            height: 400px;
+        }
     </style>
 </head>
 <body>
@@ -38,9 +43,14 @@
     <main>
         <h2>Main Content Section</h2>
         <p>This is the main content of your website. You can add text, images, links, and other elements here.</p>
+        <!-- Add your model viewer code here -->
+        <model-viewer src="URL_TO_YOUR_3D_MODEL" alt="A 3D model" auto-rotate camera-controls></model-viewer>
     </main>
     <footer>
         <p>&copy; 2024 Simple Website. All rights reserved.</p>
     </footer>
+
+    <!-- Include the Model Viewer JavaScript library -->
+    <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
 </body>
 </html>
